@@ -1,0 +1,25 @@
+<!DOCTYPE html>
+<html lang="en" xmlns:th="http://www.w3.org/1999/xhtml">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+</head>
+<body>
+
+<p>entra a la pagina principal</p>
+
+<form action="#" th:action="@{/save}" th:object="${employee}" method="post">
+
+    name: <input type="text" th:field="*{name}" ><br>
+    last name: <input type="text" th:field="*{lastName}"><br>
+    position: <input type="text" th:field="*{position}"><br>
+    <input type="submit" value="grabar">
+</form>
+
+<form action="/dato" method="post">
+    nombre: <input type="text" >
+    <input type="submit" value="enviar palabra">
+</form>
+
+</body>
+</html>

@@ -1,0 +1,30 @@
+<!DOCTYPE html>
+<html lang="en" xmlns:th="http://www.w3.org/1999/xhtml">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+</head>
+<body>
+    <table>
+        <thead>
+            <tr>
+                <th>id</th>
+                <th>nombre</th>
+                <th>apellido</th>
+                <th>posicion</th>
+            </tr>
+
+        </thead>
+        <tbody>
+            <tr th:each="employee: ${listaemployee}">
+                <td th:text="${employee.id}"></td>
+                <td th:text="${employee.name}"></td>
+                <td th:text="${employee.lastName}"></td>
+                <td th:text="${employee.position}"></td>
+
+            </tr>
+        </tbody>
+    </table>
+
+</body>
+</html>
